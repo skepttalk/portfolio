@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <title>My Portfolio</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #040000;
+      
+      header {
+      
+        color: #fff;
+        padding: 1rem;
+      }
+      main {
+        padding: 1rem;
+      }
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 1rem;
+      }
+      .hero-section {
+      
+        padding: 2rem;
+    
+      }
+      .card {
+        background-color: #fff;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+      }
+      .btn {
+        background-color: #333;
+        color: #fff;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        cursor: pointer;
+      }
+      .btn:hover {
+        background-color: #555;
+      }
+      .text-center {
+        text-align: center;
+      }
+      .skills-section {
+        padding: 2rem;
+      }
+      .skill {
+        padding: 1rem;
+        border-radius: 0.5rem;
+        background-color: #b56c18;
+        
+      }
+      .experience-section {
+        padding: 2rem;
+      
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      .d-flex {
+        display: flex;
+      }
+      .flex-row {
+        flex-direction: row;
+      }
+      .flex-column {
+        flex-direction: column;
+      }
+      .gap-1 {
+        gap: 1rem;
+      }
+      .gap-2 {
+        gap: 2rem;
+      }
+      .justify-between {
+        justify-content: space-between;
+      }
+      .justify-around {
+        justify-content: space-around;
+      }
+      .justify-center {
+        justify-content: center;
+      }
+      .justify-start {
+        justify-content: flex-start;
+      }
+      .align-center {
+        align-items: center;
+      }
+      .align-start {
+        align-items: flex-start;
+      }
+      .align-end {
+        align-items: flex-end;
+      }
+     .navbar {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  writing-mode: vertical-lr;   /* text ko vertical kar dega */
+  text-orientation: mixed;     /* text sidha dikhayega */         /* optional background */
+  padding: 20px 5px;
+  height: 80%;
+  width: fit-content;
+  
+  
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 10px 0;
+  display: inline-block;
+  transition: 0.3s;
+  justify-content: space-around;
+}
+      }
+      .img img {
+         height: auto ;
+         width: auto ;
+        object-fit: cover;
+        border-radius: 50%;
+        
+        
+      }
+      .img {        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+         top: 50%;
+          left: 50%;
+         
+      }
+
+      .social-links ul {
+        list-style: none;
+        padding: 20px;
+        margin-left: 20px;
+
+      }
+      .social-links ul a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        margin-right: 10px;
+      }
+      .social-links ul a:hover {
+        text-decoration: underline;
+      }
+
+      
+          
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 style="color: white; " >Kuldeep Singh</h1>
+    </header>
+  <div class="navbar">
+  <a href="#home">HOME</a>
+  <a href="#about">ABOUT</a>
+  <a href="#skills">SKILLS</a>
+  <a href="#experience">EXPERIENCE</a>
+  <a href="#contact">CONTACT</a>
+</div>
+
+    <main>
+    
+    <section class="hero-section" id="home">
+  <div style="
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 40px; 
+    margin-top: 80px;">
+
+    <img
+      src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=870&q=80"
+      alt="Profile Picture"
+      style="width: 350px; height: 350px; border-radius: 50%; object-fit: cover;"
+    />
+
+    <div style="max-width: 450px; text-align: left;">
+      <h1 style="font-size: 2.8rem;  color: white; margin: 0;">
+        I am <span style="color: #d19a2e; font-weight: 600;">a creative</span><br />
+        frontend developer
+      </h1>
+    </div>
+  </div>
+</section>
+
+      <div class="social-links">
+        <ul>
+          <li><a href="#github">GitHub</a></li>
+          <li><a href="#linkedin">LinkedIn</a></li>
+        </ul>
+      </div>
+      <section class="skills-section" id="skills">
+        <div class="container">
+          <span style="color:whitesmoke; ">MY</span> &nbsp;<span style="color:rgb(226, 125, 10);">SKILLS</span>
+          <div class="d-flex flex-row gap-2">
+            <div class="skill">
+              <h3 style="color: seashell;">HTML</h3>
+              <p>Proficient in HTML5</p>
+            </div>
+            <div class="skill">
+              <h3 style="color: seashell;">CSS</h3>
+              <p>Proficient in CSS3</p>
+            </div>
+            <div class="skill">
+              <h3 style="color: seashell;">JavaScript</h3>
+              <p>Proficient in JavaScript</p>
+            </div>
+          </div>
+        </div>
+    </main>
+    <footer>
+      <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+
+    </footer>
+   
+  </body>
+</html>
